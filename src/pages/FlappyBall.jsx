@@ -38,7 +38,14 @@ const FlappyBall = () => {
       }
     };
 
+    const handleClick = (e) => {
+      e.preventDefault();
+      flap();
+    };
+
     document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("click", handleClick);
+    document.addEventListener("touchstart", handleClick);
 
     let animationFrame;
     let frameCount = 0;
@@ -101,7 +108,8 @@ const FlappyBall = () => {
       }
 
       pipes.forEach((pipe) => {
-        const withinX = ball.x + 12 > pipe.x && ball.x - 12 < pipe.x + pipeWidth;
+        const withinX =
+          ball.x + 12 > pipe.x && ball.x - 12 < pipe.x + pipeWidth;
         const hitTop = ball.y - 12 < pipe.top;
         const hitBottom = ball.y + 12 > canvas.height - pipe.bottom;
 
@@ -140,6 +148,8 @@ const FlappyBall = () => {
     return () => {
       cancelAnimationFrame(animationFrame);
       document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("click", handleClick);
+      document.removeEventListener("touchstart", handleClick);
     };
   }, [gameOver]);
 
@@ -166,8 +176,8 @@ const FlappyBall = () => {
         </div>
       )}
 
-      <p className="mt-4 text-sm text-slate-400">
-        Press <strong>Space</strong> to Flap
+      <p className="mt-4 text-sm text-slate-400 text-center px-4">
+        Tap screen or press <strong>Space</strong> to flap
       </p>
     </div>
   );
