@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 export default function Projects() {
   const projects = [
     {
@@ -49,22 +50,22 @@ export default function Projects() {
         <div className="bg-gray-800 border hover:border-gray-800 rounded-xl p-6">
           <h2 className="text-2xl font-semibold mb-2">Tic Tac Toe</h2>
           <p className="text-gray-300 mb-4">Small timepass game to play when feeling stressed</p>
-          <a 
-            href="/tic-tac-toe"
+          <NavLink 
+            to="/tic-tac-toe"
             className="bg-blue-700 hover:bg-blue-800 py-2 px-6 rounded-2xl"
           >
             Play Game
-          </a>
+          </NavLink>
         </div>
         <div className="bg-gray-800 border hover:border-gray-800 rounded-xl p-6">
           <h2 className="text-2xl font-semibold mb-2">Flappy Ball</h2>
           <p className="text-gray-300 mb-4">Small timepass game to play when feeling stressed</p>
-          <a 
-            href="/flappy-ball"
+          <NavLink
+            to="/flappy-ball"
             className="bg-blue-700 hover:bg-blue-800 py-2 px-6 rounded-2xl"
           >
             Play Game
-          </a>
+          </NavLink>
         </div>
       </div>
     </section>
