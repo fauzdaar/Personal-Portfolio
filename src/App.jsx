@@ -6,6 +6,7 @@ import Education from './pages/education';
 import Contact from './pages/contact';
 import Skills from './pages/skills';
 import TTT from "./pages/tic-tac-toe";
+import FlappyBall from './pages/FlappyBall';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/tic-tac-toe" element={<TTT />} />
+        <Route path="/flappy-ball" element={<FlappyBall />} />
       </Routes>
       <Footer />
     </>

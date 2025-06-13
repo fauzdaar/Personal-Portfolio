@@ -3,8 +3,8 @@ export default function Projects() {
     {
       title: 'Portfolio Website',
       description: 'A personal portfolio built with React, Tailwind CSS, and Vite.',
-      link: 'https://your-portfolio-link.com',
-      github: 'xyz',
+      link: 'https://abhishek-kumar-pp.vercel.app/',
+      github: 'https://github.com/fauzdaar/Personal-Portfolio',
     },
     {
       title: 'Chat App',
@@ -51,6 +51,16 @@ export default function Projects() {
           <p className="text-gray-300 mb-4">Small timepass game to play when feeling stressed</p>
           <a 
             href="/tic-tac-toe"
+            className="bg-blue-700 hover:bg-blue-800 py-2 px-6 rounded-2xl"
+          >
+            Play Game
+          </a>
+        </div>
+        <div className="bg-gray-800 border hover:border-gray-800 rounded-xl p-6">
+          <h2 className="text-2xl font-semibold mb-2">Flappy Ball</h2>
+          <p className="text-gray-300 mb-4">Small timepass game to play when feeling stressed</p>
+          <a 
+            href="/flappy-ball"
             className="bg-blue-700 hover:bg-blue-800 py-2 px-6 rounded-2xl"
           >
             Play Game
