@@ -47,12 +47,6 @@ Welcome to the source code of my **personal portfolio website**, built to showca
 
 ---
 
-## 📂 Project Structure
-
-Personal-Portfolio/ ├── public/ ├── src/ │   ├── assets/ │   ├── components/ │   ├── games/              # Mini-games like Tic-Tac-Toe & Flappy Ball │   ├── sections/           # Hero, About, Projects, Contact etc. │   ├── App.jsx │   └── main.jsx ├── tailwind.config.js ├── vite.config.js └── README.md
-
----
-
 ## 🏫 Education
 
 - 🎓 **B.Tech – Computer Science & Engineering**  
