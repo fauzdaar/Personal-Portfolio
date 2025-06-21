@@ -67,10 +67,9 @@ npm run dev
 
 📬 Contact
 
-📧 Email: your.email@example.com (replace this with your actual email)
+📧 Email: jat.abhishek.99@gmail.com
 
-🔗 LinkedIn: Abhishek Kumar
-
+🔗 LinkedIn: https://www.linkedin.com/in/abhishek-kumar-06774a149?
 
 
 ---
