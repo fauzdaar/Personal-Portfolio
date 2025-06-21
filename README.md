@@ -41,12 +41,6 @@ Welcome to the source code of my **personal portfolio website**, built to showca
 
 ---
 
-## 📸 Preview
-
-*(Add a screenshot here if available, like `./assets/portfolio-preview.png`)*
-
----
-
 ## 🏫 Education
 
 - 🎓 **B.Tech – Computer Science & Engineering**  
