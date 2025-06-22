@@ -39,7 +39,8 @@ export default function VisualToggles({
         className="w-10 h-10 bg-gray-800 text-white rounded-full flex items-center justify-center shadow hover:bg-gray-700 transition"
         title="Visual Toggles"
       >
-        <Settings size={20} />
+        <Settings size={20} className={!open ? "gear-rotate" : ""} />
+
       </button>
 
       {/* Animated Toggle Menu */}

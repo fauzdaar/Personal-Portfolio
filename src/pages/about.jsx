@@ -1,6 +1,7 @@
 export default function About() {
   return (
     <section
+      data-aos="fade-up"
       id="about"
       className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white px-6 py-16 flex items-center"
     >

@@ -79,7 +79,7 @@ export default function Navbar({ isSingle }) {
             {dropdownOpen && (
               <ul className="absolute right-0 mt-2 w-44 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded shadow-lg z-50 p-2 space-y-2">
                 <li className="hover:bg-gray-100 dark:hover:bg-gray-600 rounded px-2">
-                  {renderLink("resume", "Resume", true)}
+                  {renderLink("resume", "Resume")}
                 </li>
                 <li className="hover:bg-gray-100 dark:hover:bg-gray-600 rounded px-2">
                   {renderLink("contact", "Contact")}
@@ -133,7 +133,7 @@ export default function Navbar({ isSingle }) {
           </button>
           {dropdownOpen && (
             <div className="pl-2 space-y-3">
-              {renderLink("resume", "Resume", true)}
+              {renderLink("resume", "Resume")}
               {renderLink("contact", "Contact")}
             </div>
           )}

@@ -31,6 +31,7 @@ export default function Skills() {
 
   return (
     <section
+      data-aos="fade-up"
       id="skills"
       className="min-h-screen bg-gray-100 dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white px-6 py-16 transition-colors duration-300"
     >

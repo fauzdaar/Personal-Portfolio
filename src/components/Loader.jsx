@@ -11,7 +11,7 @@ export default function Loader() {
 
         {/* Techy pulsing text */}
         <p className="text-white text-xl font-semibold animate-pulse tracking-widest uppercase">
-          Initializing Portfolio...
+          Loading...
         </p>
       </div>
     </div>

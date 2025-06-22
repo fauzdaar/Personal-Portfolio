@@ -27,6 +27,7 @@ export default function Education() {
 
   return (
     <section
+      data-aos="fade-up"
       id="education"
       className="min-h-screen bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 text-black dark:text-white py-16 px-6 transition-colors duration-300"
     >

@@ -38,6 +38,7 @@ export default function Games({ isSingle }) {
 
   return (
     <section
+      data-aos="fade-up"
       id="games"
       className="min-h-screen bg-gray-100 dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-black text-gray-900 dark:text-white px-6 py-20 transition-colors duration-300"
     >

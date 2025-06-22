@@ -18,6 +18,7 @@ export default function Projects({ isSingle }) {
 
   return (
     <section
+      data-aos="fade-up"
       id="projects"
       className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white px-6 py-16 transition-colors duration-300"
     >
