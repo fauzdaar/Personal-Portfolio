@@ -1,0 +1,86 @@
+/* Lightning container */
+.lightning-svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  pointer-events: none;
+}
+
+/* Lightning bolts (default light mode) */
+.lightning-bolt {
+  stroke: #555;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 6px #888);
+  animation: fadeBolt 0.4s ease-out forwards;
+}
+
+/* Dark mode lightning */
+.dark .lightning-bolt {
+  stroke: white;
+  filter: drop-shadow(0 0 8px white);
+}
+
+@keyframes fadeBolt {
+  0% {
+    stroke-opacity: 1;
+  }
+  50% {
+    stroke-opacity: 0.6;
+  }
+  100% {
+    stroke-opacity: 0;
+  }
+}
+
+/* Raindrop (default light mode) */
+.raindrop {
+  stroke: #1e3a8a;
+  stroke-width: 1;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Dark mode raindrop */
+.dark .raindrop {
+  stroke: skyblue;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+/* Cloud styles (gray blobs) */
+.cloud {
+  position: fixed;
+  left: -200px;
+  background: #ccc;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 10;
+  animation-name: floatCloud;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Dark mode cloud */
+.dark .cloud {
+  background: #999;
+}
+
+@keyframes floatCloud {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}

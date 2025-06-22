@@ -45,7 +45,6 @@ const FlappyBall = () => {
 
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("click", handleClick);
-    document.addEventListener("touchstart", handleClick);
 
     let animationFrame;
     let frameCount = 0;
@@ -85,7 +84,7 @@ const FlappyBall = () => {
         );
       });
 
-      // Score (live from ref)
+      // Score
       ctx.fillStyle = "white";
       ctx.font = "24px sans-serif";
       ctx.fillText(`Score: ${scoreRef.current}`, 20, 40);
@@ -149,7 +148,6 @@ const FlappyBall = () => {
       cancelAnimationFrame(animationFrame);
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("click", handleClick);
-      document.removeEventListener("touchstart", handleClick);
     };
   }, [gameOver]);
 
@@ -161,8 +159,8 @@ const FlappyBall = () => {
         ref={canvasRef}
         width={400}
         height={500}
-        className="border-4 border-slate-700 bg-slate-800 rounded"
-      ></canvas>
+        className="pointer-events-none border-4 border-slate-700 bg-slate-800 rounded"
+      />
 
       {gameOver && (
         <div className="mt-6 flex flex-col items-center gap-2">
@@ -177,7 +175,7 @@ const FlappyBall = () => {
       )}
 
       <p className="mt-4 text-sm text-slate-400 text-center px-4">
-        Tap screen or press <strong>Space</strong> to flap
+        Click or press <strong>Space</strong> to flap
       </p>
     </div>
   );

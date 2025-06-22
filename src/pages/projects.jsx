@@ -1,71 +1,93 @@
-import { NavLink } from 'react-router-dom';
-export default function Projects() {
+import { Link } from "react-router-dom";
+
+export default function Projects({ isSingle }) {
   const projects = [
     {
-      title: 'Portfolio Website',
-      description: 'A personal portfolio built with React, Tailwind CSS, and Vite.',
-      link: 'https://abhishek-kumar-pp.vercel.app/',
-      github: 'https://github.com/fauzdaar/Personal-Portfolio',
+      title: "Portfolio Website",
+      description: "A personal portfolio built with React, Tailwind CSS, and Vite.",
+      link: "https://abhishek-kumar-pp.vercel.app/",
+      github: "https://github.com/fauzdaar/Personal-Portfolio",
     },
     {
-      title: 'Chat App',
-      description: 'A Python-based chat app hosted locally with public access.',
-      link: 'https://your-chat-app-link.com',
-      github: 'xyz',
+      title: "Chat App",
+      description: "A Python-based chat app hosted locally with public access.",
+      link: "https://example.com",
+      github: "https://github.com/fauzdaar/chat-app",
     },
   ];
 
   return (
-    <section className="min-h-screen bg-gray-900 text-white px-6 py-12">
-      <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">My Projects</h1>
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-gray-800 rounded-xl p-6 hover:border-gray-800 border shadow-md hover:shadow-lg transition duration-300"
-          >
-            <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
-            <p className="text-gray-300 mb-4">{project.description}</p>
-            <div>
+    <section
+      id="projects"
+      className="min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white px-6 py-16 transition-colors duration-300"
+    >
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          🚀 My Projects
+        </h2>
 
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300"
-              >
-              View Project →
-            </a>
-              </div>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300"
+        <div className="w-full flex flex-wrap justify-center gap-10">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="max-w-sm w-full bg-gray-100 dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
             >
-              GitHub Repo →
-            </a>
-          </div>
-        ))}
-        <div className="bg-gray-800 border hover:border-gray-800 rounded-xl p-6">
-          <h2 className="text-2xl font-semibold mb-2">Tic Tac Toe</h2>
-          <p className="text-gray-300 mb-4">Small timepass game to play when feeling stressed</p>
-          <NavLink 
-            to="/tic-tac-toe"
-            className="bg-blue-700 hover:bg-blue-800 py-2 px-6 rounded-2xl"
-          >
-            Play Game
-          </NavLink>
-        </div>
-        <div className="bg-gray-800 border hover:border-gray-800 rounded-xl p-6">
-          <h2 className="text-2xl font-semibold mb-2">Flappy Ball</h2>
-          <p className="text-gray-300 mb-4">Small timepass game to play when feeling stressed</p>
-          <NavLink
-            to="/flappy-ball"
-            className="bg-blue-700 hover:bg-blue-800 py-2 px-6 rounded-2xl"
-          >
-            Play Game
-          </NavLink>
+              <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
+              <div className="flex flex-col gap-2 mt-4">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-md text-center transition"
+                >
+                  🌐 View Project
+                </a>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-700 hover:bg-gray-600 text-white text-sm font-medium px-4 py-2 rounded-md text-center transition"
+                >
+                  💻 GitHub Repo
+                </a>
+              </div>
+            </div>
+          ))}
+
+          {!isSingle && (
+            <>
+              <div className="max-w-sm w-full bg-gray-100 dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-2xl font-semibold mb-3">Tic Tac Toe</h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-6">
+                    Small timepass game to play when feeling stressed.
+                  </p>
+                </div>
+                <Link
+                  to="/tic-tac-toe"
+                  className="bg-pink-600 hover:bg-pink-700 text-white text-sm font-medium px-4 py-2 rounded-md text-center transition mt-auto"
+                >
+                  🎮 Play Game
+                </Link>
+              </div>
+
+              <div className="max-w-sm w-full bg-gray-100 dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-2xl font-semibold mb-3">Flappy Ball</h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-6">
+                    A flappy bird-style game built for fun breaks.
+                  </p>
+                </div>
+                <Link
+                  to="/flappy-ball"
+                  className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-4 py-2 rounded-md text-center transition mt-auto"
+                >
+                  🕹️ Play Game
+                </Link>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

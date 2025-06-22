@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white py-12 px-6 transition-colors duration-300">
+    <section id="contact" className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white py-12 px-6 transition-colors duration-300">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-center">📬 Contact Me</h2>
 

@@ -1,2 +1,24 @@
 @import "tailwindcss";
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes spin-glow {
+  0% {
+    transform: rotate(0deg);
+    filter: drop-shadow(0 0 5px #3b82f6);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px #3b82f6);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: drop-shadow(0 0 5px #3b82f6);
+  }
+}
+
+.animate-spin-glow {
+  animation: spin-glow 1.2s linear infinite;
+}
