@@ -9,10 +9,10 @@ export default function Projects({ isSingle }) {
       github: "https://github.com/fauzdaar/Personal-Portfolio",
     },
     {
-      title: "Chat App",
-      description: "A Python-based chat app hosted locally with public access.",
-      link: "https://example.com",
-      github: "https://github.com/fauzdaar/chat-app",
+      title: "Chatting and Gaming",
+      description: "A firebase + react project for chatting and multiplayer gaming.",
+      link: "https://firebase-minigames.vercel.app/",
+      github: "https://github.com/fauzdaar/firebase-minigames",
     },
   ];
 
