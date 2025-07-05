@@ -20,7 +20,7 @@ export default function Resume() {
           <div className="space-y-4">
             <div>
               <h3 className="font-semibold">B.Tech in Computer Science</h3>
-              <p className="italic">Rajasthan Technical University, Kota (2019–2023)</p>
+              <p className="italic">Rajasthan Technical University, Kota (2017–2021)</p>
               <p className="text-gray-600 dark:text-gray-400">Focus: Data Structures, Algorithms, Full‑Stack Development.</p>
             </div>
             <div>
