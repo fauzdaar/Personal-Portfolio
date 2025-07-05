@@ -5,7 +5,7 @@ export default function Education() {
     {
       degree: "Bachelor of Technology (Computer Science)",
       institution: "Rajasthan Technical University, Kota, Rajasthan",
-      year: "2019 - 2023",
+      year: "2017 - 2021",
       description:
         "Focused on software engineering, data structures, algorithms, and full-stack web development. Participated in coding contests and hackathons.",
     },
